@@ -1,0 +1,20 @@
+(racer-read-file "/home/nicu/Desktop/KBS/TES-V-SkyrimSkillsOntology/onto.racer")
+; racer calls, rule/set querries
+(CONCEPT-INSTANCES SKILL_CLASS)
+(CONCEPT-INSTANCES UPGRADEABLE)
+
+; role querries
+(INDIVIDUAL-FILLERS SNEAK hasSkill)
+(INDIVIDUAL-FILLERS SILENCE hasClass)
+(INDIVIDUAL-FILLERS SPEECH hasSkill)
+(INDIVIDUAL-FILLERS PRIEST (inv isSuitable))
+(INDIVIDUAL-FILLERS BACKSTAB hasSkillRequirement)
+
+
+; verification querries
+(TBOX-COHERENT?)
+(ABOX-CONSISTENT?)
+(TBOX-CYCLIC?)
+
+; attribute query
+(INDIVIDUAL-TOLD-ATTRIBUTE-VALUE RUNE_MASTER hasDescription)
