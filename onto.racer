@@ -59,7 +59,6 @@
 (ATTRIBUTE-FILLER DEADLY_AIM 40 hasLevelRequirement)
 (ATTRIBUTE-FILLER DEADLY_AIM "Sneak attacks with bows now do three times damage." hasDescription)
 
-
 (INSTANCE ASSASSINS_BLADE SKILL)
 (RELATED ASSASSINS_BLADE DEADLY_AIM hasSkillRequirement)
 (ATTRIBUTE-FILLER ASSASSINS_BLADE 50 hasLevelRequirement)
@@ -90,6 +89,7 @@
 (ATTRIBUTE-FILLER SHADOW_WARRIOR 100 hasLevelRequirement)
 (ATTRIBUTE-FILLER SHADOW_WARRIOR "Crouching stops combat for a moment and forces distant opponents to search for a target." hasDescription)
 
+
 ; lockpicking
 (INSTANCE NOVICE_LOCKS SKILL)
 (ATTRIBUTE-FILLER NOVICE_LOCKS 0 hasLevelRequirement)
@@ -117,17 +117,17 @@
 
 (INSTANCE GOLDEN_TOUCH SKILL)
 (RELATED GOLDEN_TOUCH ADEPT_LOCKS hasSkillRequirement)
-(ATTRIBUTE-FILLER GOLDEN_TOUCH 	60 hasLevelRequirement)
+(ATTRIBUTE-FILLER GOLDEN_TOUCH 60 hasLevelRequirement)
 (ATTRIBUTE-FILLER GOLDEN_TOUCH "Find more gold in chests." hasDescription)
 
 (INSTANCE TREASURE_HUNTER SKILL)
 (RELATED TREASURE_HUNTER GOLDEN_TOUCH hasSkillRequirement)
-(ATTRIBUTE-FILLER TREASURE_HUNTER 	70 hasLevelRequirement)
+(ATTRIBUTE-FILLER TREASURE_HUNTER 70 hasLevelRequirement)
 (ATTRIBUTE-FILLER TREASURE_HUNTER "50% greater chance of finding special treasure." hasDescription)
 
 (INSTANCE EXPERT_LOCKS SKILL)
 (RELATED EXPERT_LOCKS ADEPT_LOCKS hasSkillRequirement)
-(ATTRIBUTE-FILLER EXPERT_LOCKS 	75 hasLevelRequirement)
+(ATTRIBUTE-FILLER EXPERT_LOCKS 75 hasLevelRequirement)
 (ATTRIBUTE-FILLER EXPERT_LOCKS "Expert locks are much easier to pick." hasDescription)
 
 (INSTANCE LOCKSMITH SKILL)
@@ -144,6 +144,7 @@
 (RELATED MASTER_LOCKS EXPERT_LOCKS hasSkillRequirement)
 (ATTRIBUTE-FILLER MASTER_LOCKS 100 hasLevelRequirement)
 (ATTRIBUTE-FILLER MASTER_LOCKS "Master locks are much easier to pick." hasDescription)
+
 
 ; pickpocket
 (INSTANCE LIGHT_FINGERS SKILL)
@@ -186,6 +187,7 @@
 (ATTRIBUTE-FILLER PERFECT_TOUCH 100 hasLevelRequirement)
 (ATTRIBUTE-FILLER PERFECT_TOUCH "Can pickpocket equipped items." hasDescription)
 
+
 ; speech
 (INSTANCE HAGGLING SKILL)
 (INSTANCE HAGGLING UPGRADEABLE)
@@ -212,7 +214,6 @@
 (ATTRIBUTE-FILLER FENCE 90 hasLevelRequirement)
 (ATTRIBUTE-FILLER FENCE "Can barter stolen goods with any merchant you have invested in." hasDescription)
 
-
 (INSTANCE MASTER_TRADER SKILL)
 (RELATED MASTER_TRADER FENCE hasSkillRequirement)
 (ATTRIBUTE-FILLER MASTER_TRADER 100 hasLevelRequirement)
@@ -232,6 +233,7 @@
 (RELATED INTIMIDATION PERSUASION hasSkillRequirement)
 (ATTRIBUTE-FILLER INTIMIDATION 70 hasLevelRequirement)
 (ATTRIBUTE-FILLER INTIMIDATION "Intimidation is Potions and poisons you make are 20% strongertwice as likely to be successful." hasDescription)
+
 
 ; alchemy
 (INSTANCE ALCHEMIST SKILL)
@@ -317,7 +319,6 @@
 (ATTRIBUTE-FILLER HYPNOTIC_GAZE 30 hasLevelRequirement)
 (ATTRIBUTE-FILLER HYPNOTIC_GAZE "Calm spells now work on higher level opponents. Cumulative with Kindred Mage and Animage." hasDescription)
 
-
 (INSTANCE ASPECT_OF_TERROR SKILL)
 (RELATED ASPECT_OF_TERROR HYPNOTIC_GAZE hasSkillRequirement)
 (ATTRIBUTE-FILLER ASPECT_OF_TERROR 50 hasLevelRequirement)
@@ -359,7 +360,6 @@
 (ATTRIBUTE-FILLER APPRENTICE_CONJURATION 25 hasLevelRequirement)
 (ATTRIBUTE-FILLER APPRENTICE_CONJURATION "Cast Apprentice level Conjuration spells for half magicka." hasDescription)
 
-
 (INSTANCE ADEPT_CONJURATION SKILL)
 (RELATED ADEPT_CONJURATION APPRENTICE_CONJURATION hasSkillRequirement)
 (ATTRIBUTE-FILLER ADEPT_CONJURATION 50 hasLevelRequirement)
@@ -367,53 +367,53 @@
 
 (INSTANCE EXPERT_CONJURATION SKILL)
 (RELATED EXPERT_CONJURATION ADEPT_CONJURATION hasSkillRequirement)
-(ATTRIBUTE-FILLER EXPERT_CONJURATION 75  hasLevelRequirement)
+(ATTRIBUTE-FILLER EXPERT_CONJURATION 75 hasLevelRequirement)
 (ATTRIBUTE-FILLER EXPERT_CONJURATION "Cast Expert level Conjuration spells for half magicka." hasDescription)
 
 (INSTANCE MASTER_CONJURATION SKILL)
 (RELATED MASTER_CONJURATION EXPERT_CONJURATION hasSkillRequirement)
-(ATTRIBUTE-FILLER MASTER_CONJURATION 100  hasLevelRequirement)
+(ATTRIBUTE-FILLER MASTER_CONJURATION 100 hasLevelRequirement)
 (ATTRIBUTE-FILLER MASTER_CONJURATION "Cast Master level Conjuration spells for half magicka." hasDescription)
 
 (INSTANCE MYSTIC_BINDING SKILL)
 (RELATED MYSTIC_BINDING NOVICE_CONJURATION hasSkillRequirement)
-(ATTRIBUTE-FILLER MYSTIC_BINDING 20  hasLevelRequirement)
+(ATTRIBUTE-FILLER MYSTIC_BINDING 20 hasLevelRequirement)
 (ATTRIBUTE-FILLER MYSTIC_BINDING "Bound weapons do more damage." hasDescription)
 
 (INSTANCE SOUL_STEALER SKILL)
 (RELATED SOUL_STEALER MYSTIC_BINDING hasSkillRequirement)
-(ATTRIBUTE-FILLER SOUL_STEALER 30  hasLevelRequirement)
+(ATTRIBUTE-FILLER SOUL_STEALER 30 hasLevelRequirement)
 (ATTRIBUTE-FILLER SOUL_STEALER "Bound weapons cast Soul Trap on targets." hasDescription)
 
 (INSTANCE OBLIVION_BINDING SKILL)
 (RELATED OBLIVION_BINDING SOUL_STEALER hasSkillRequirement)
-(ATTRIBUTE-FILLER OBLIVION_BINDING 50  hasLevelRequirement)
+(ATTRIBUTE-FILLER OBLIVION_BINDING 50 hasLevelRequirement)
 (ATTRIBUTE-FILLER OBLIVION_BINDING "Bound weapons will banish summoned creatures and turn raised ones." hasDescription)
 
 (INSTANCE CONJURATION_DUAL_CASTING SKILL)
 (RELATED CONJURATION_DUAL_CASTING NOVICE_CONJURATION hasSkillRequirement)
-(ATTRIBUTE-FILLER CONJURATION_DUAL_CASTING 20  hasLevelRequirement)
+(ATTRIBUTE-FILLER CONJURATION_DUAL_CASTING 20 hasLevelRequirement)
 (ATTRIBUTE-FILLER CONJURATION_DUAL_CASTING "Dual casting a Conjuration spell overcharges the spell, allowing it to last longer." hasDescription)
 
 (INSTANCE NECROMANCY SKILL)
 (RELATED NECROMANCY NOVICE_CONJURATION hasSkillRequirement)
-(ATTRIBUTE-FILLER NECROMANCY 40  hasLevelRequirement)
+(ATTRIBUTE-FILLER NECROMANCY 40 hasLevelRequirement)
 (ATTRIBUTE-FILLER NECROMANCY "Greater duration for reanimated undead." hasDescription)
 
 (INSTANCE DARK_SOULS SKILL)
 (RELATED DARK_SOULS NECROMANCY hasSkillRequirement)
-(ATTRIBUTE-FILLER DARK_SOULS 70  hasLevelRequirement)
+(ATTRIBUTE-FILLER DARK_SOULS 70 hasLevelRequirement)
 (ATTRIBUTE-FILLER DARK_SOULS "Reanimated undead have 100 points more health." hasDescription)
 
 (INSTANCE TWIN_SOULS SKILL)
 (RELATED TWIN_SOULS DARK_SOULS hasSkillRequirement)
-(ATTRIBUTE-FILLER TWIN_SOULS 100  hasLevelRequirement)
+(ATTRIBUTE-FILLER TWIN_SOULS 100 hasLevelRequirement)
 (ATTRIBUTE-FILLER TWIN_SOULS "You can have two atronachs or reanimated zombies." hasDescription)
 
 (INSTANCE SUMMONER SKILL)
 (INSTANCE SUMMONER UPGRADEABLE)
 (RELATED SUMMONER NOVICE_CONJURATION hasSkillRequirement)
-(ATTRIBUTE-FILLER SUMMONER 30  hasLevelRequirement)
+(ATTRIBUTE-FILLER SUMMONER 30 hasLevelRequirement)
 (ATTRIBUTE-FILLER SUMMONER "Can summon atronachs or raise undead twice as far away." hasDescription)
 
 (INSTANCE ALTROMANCY SKILL)
@@ -425,6 +425,7 @@
 (RELATED ELEMENTAL_POTENCY ALTROMANCY hasSkillRequirement)
 (ATTRIBUTE-FILLER ELEMENTAL_POTENCY 80 hasLevelRequirement)
 (ATTRIBUTE-FILLER ELEMENTAL_POTENCY "Conjured Atronachs are 50% more powerful." hasDescription)
+
 
 ; destruction
 (INSTANCE NOVICE_DESTRUCTION SKILL)
@@ -532,7 +533,7 @@
 (ATTRIBUTE-FILLER ADEPT_RESTORATION "Cast Adept level Restoration spells for half magicka." hasDescription)
 
 (INSTANCE EXPERT_RESTORATION SKILL)
-(RELATED EXPERT_RESTORATION NOVICE_RESTORATION hasSkillRequirement)
+(RELATED EXPERT_RESTORATION ADEPT_RESTORATION hasSkillRequirement)
 (ATTRIBUTE-FILLER EXPERT_RESTORATION 75 hasLevelRequirement)
 (ATTRIBUTE-FILLER EXPERT_RESTORATION "Cast Expert level Restoration spells for half magicka." hasDescription)
 
@@ -559,48 +560,49 @@
 (INSTANCE RESPITE SKILL)
 (RELATED RESPITE NOVICE_RESTORATION hasSkillRequirement)
 (ATTRIBUTE-FILLER RESPITE 40 hasLevelRequirement)
-(ATTRIBUTE-FILLER RESPITE	"Healing spells also restore Stamina." hasDescription)
+(ATTRIBUTE-FILLER RESPITE "Healing spells also restore Stamina." hasDescription)
+
 
 ; alteration
 (INSTANCE NOVICE_ALTERATION SKILL)
 (ATTRIBUTE-FILLER NOVICE_ALTERATION 0 hasLevelRequirement)
-(ATTRIBUTE-FILLER NOVICE_ALTERATION	"Cast Novice level Alteration spells for half magicka." hasDescription)
+(ATTRIBUTE-FILLER NOVICE_ALTERATION "Cast Novice level Alteration spells for half magicka." hasDescription)
 
 (INSTANCE APPRENTICE_ALTERATION SKILL)
 (RELATED APPRENTICE_ALTERATION NOVICE_ALTERATION hasSkillRequirement)
 (ATTRIBUTE-FILLER APPRENTICE_ALTERATION 25 hasLevelRequirement)
-(ATTRIBUTE-FILLER APPRENTICE_ALTERATION	"Cast Apprentice level Alteration spells for half magicka." hasDescription)
+(ATTRIBUTE-FILLER APPRENTICE_ALTERATION "Cast Apprentice level Alteration spells for half magicka." hasDescription)
 
 (INSTANCE MAGIC_RESITANCE SKILL)
 (INSTANCE MAGIC_RESITANCE UPGRADEABLE)
 (RELATED MAGIC_RESITANCE APPRENTICE_ALTERATION hasSkillRequirement)
-(ATTRIBUTE-FILLER APPRENTICE_ALTERATION 30 hasLevelRequirement)
-(ATTRIBUTE-FILLER APPRENTICE_ALTERATION	"Blocks 10% of a spell's effects." hasDescription)
+(ATTRIBUTE-FILLER MAGIC_RESITANCE 30 hasLevelRequirement)
+(ATTRIBUTE-FILLER MAGIC_RESITANCE "Blocks 10% of a spell's effects." hasDescription)
 
 (INSTANCE ADEPT_ALTERATION SKILL)
 (RELATED ADEPT_ALTERATION APPRENTICE_ALTERATION hasSkillRequirement)
 (ATTRIBUTE-FILLER ADEPT_ALTERATION 50 hasLevelRequirement)
-(ATTRIBUTE-FILLER ADEPT_ALTERATION	"Cast Adept level Alteration spells for half magicka." hasDescription)
+(ATTRIBUTE-FILLER ADEPT_ALTERATION "Cast Adept level Alteration spells for half magicka." hasDescription)
 
 (INSTANCE EXPERT_ALTERATION SKILL)
 (RELATED EXPERT_ALTERATION ADEPT_ALTERATION hasSkillRequirement)
 (ATTRIBUTE-FILLER EXPERT_ALTERATION 75 hasLevelRequirement)
-(ATTRIBUTE-FILLER EXPERT_ALTERATION	"Cast Expert level Alteration spells for half magicka." hasDescription)
+(ATTRIBUTE-FILLER EXPERT_ALTERATION "Cast Expert level Alteration spells for half magicka." hasDescription)
 
 (INSTANCE MASTER_ALTERATION SKILL)
 (RELATED MASTER_ALTERATION EXPERT_ALTERATION hasSkillRequirement)
 (ATTRIBUTE-FILLER MASTER_ALTERATION 100 hasLevelRequirement)
-(ATTRIBUTE-FILLER MASTER_ALTERATION	"Cast Master level Alteration spells for half magicka." hasDescription)
+(ATTRIBUTE-FILLER MASTER_ALTERATION "Cast Master level Alteration spells for half magicka." hasDescription)
 
 (INSTANCE ATRONACH SKILL)
 (RELATED ATRONACH EXPERT_ALTERATION hasSkillRequirement)
 (ATTRIBUTE-FILLER ATRONACH 100 hasLevelRequirement)
-(ATTRIBUTE-FILLER ATRONACH	"Absorb 30% of the magicka of any spells that hit you." hasDescription)
+(ATTRIBUTE-FILLER ATRONACH "Absorb 30% of the magicka of any spells that hit you." hasDescription)
 
 (INSTANCE STABILITY SKILL)
 (RELATED STABILITY ADEPT_ALTERATION hasSkillRequirement)
 (ATTRIBUTE-FILLER STABILITY 70 hasLevelRequirement)
-(ATTRIBUTE-FILLER STABILITY	"Alteration spells have 50% greater duration." hasDescription)
+(ATTRIBUTE-FILLER STABILITY "Alteration spells have 50% greater duration." hasDescription)
 
 (INSTANCE MAGE_ARMOR SKILL)
 (INSTANCE MAGE_ARMOR UPGRADEABLE)
@@ -612,6 +614,7 @@
 (RELATED ALTERATION_DUAL_CASTING NOVICE_ALTERATION hasSkillRequirement)
 (ATTRIBUTE-FILLER ALTERATION_DUAL_CASTING 20 hasLevelRequirement)
 (ATTRIBUTE-FILLER ALTERATION_DUAL_CASTING "Dual casting an Alteration spell overcharges the effects into an even more powerful version." hasDescription)
+
 
 ; enchanting
 (INSTANCE ENCHANTER SKILL)
@@ -658,6 +661,7 @@
 (RELATED STORM_ENCHANTER FROST_ENCHANTER hasSkillRequirement)
 (ATTRIBUTE-FILLER STORM_ENCHANTER 50 hasLevelRequirement)
 (ATTRIBUTE-FILLER STORM_ENCHANTER "Shock enchantments on weapons and armor are 25% stronger." hasDescription)
+
 
 ; smithing
 (INSTANCE STEEL_SMITHING SKILL)
@@ -709,6 +713,7 @@
 (ATTRIBUTE-FILLER GLASS_SMITHING 70 hasLevelRequirement)
 (ATTRIBUTE-FILLER GLASS_SMITHING "Can create Glass armor and weapons at forges, and improve them twice as much." hasDescription)
 
+
 ; heavy armor
 (INSTANCE JUGGERNAUT SKILL)
 (INSTANCE JUGGERNAUT UPGRADEABLE)
@@ -728,7 +733,7 @@
 (INSTANCE MATCHING_SET SKILL)
 (RELATED MATCHING_SET TOWER_OF_STRENGTH hasSkillRequirement)
 (ATTRIBUTE-FILLER MATCHING_SET 70 hasLevelRequirement)
-(ATTRIBUTE-FILLER MATCHING_SET "Additional 25% Armor bonus if wearing a matched set of Heavy Armor.	" hasDescription)
+(ATTRIBUTE-FILLER MATCHING_SET "Additional 25% Armor bonus if wearing a matched set of Heavy Armor. " hasDescription)
 
 (INSTANCE REFLECT_BLOWS SKILL)
 (RELATED REFLECT_BLOWS MATCHING_SET hasSkillRequirement)
@@ -749,6 +754,7 @@
 (RELATED CONDITIONING CUSHIONED hasSkillRequirement)
 (ATTRIBUTE-FILLER CONDITIONING 70 hasLevelRequirement)
 (ATTRIBUTE-FILLER CONDITIONING "Heavy Armor weighs nothing and doesn't slow you down when worn." hasDescription)
+
 
 ; block
 (INSTANCE SHIELD_WALL SKILL)
@@ -795,6 +801,7 @@
 (RELATED BLOCK_RUNNER ELEMENTAL_PROTECTION hasSkillRequirement)
 (ATTRIBUTE-FILLER BLOCK_RUNNER 70 hasLevelRequirement)
 (ATTRIBUTE-FILLER BLOCK_RUNNER "Able to move faster with a shield or weapon raised." hasDescription)
+
 
 ; two-handed
 (INSTANCE BARBARIAN SKILL)
@@ -844,6 +851,7 @@
 (RELATED LIMBSPLITTER BARBARIAN hasSkillRequirement)
 (ATTRIBUTE-FILLER LIMBSPLITTER 30 hasLevelRequirement)
 (ATTRIBUTE-FILLER LIMBSPLITTER "Attacks with battle axes cause extra bleeding damage." hasDescription)
+
 
 ; one-handed
 (INSTANCE ARMSMAN SKILL)
@@ -900,6 +908,7 @@
 (ATTRIBUTE-FILLER HACK_AND_SLASH 30 hasLevelRequirement)
 (ATTRIBUTE-FILLER HACK_AND_SLASH "Attacks with war axes cause extra bleeding damage." hasDescription)
 
+
 ; archery
 (INSTANCE OVERDRAW SKILL)
 (INSTANCE OVERDRAW UPGRADEABLE)
@@ -948,6 +957,7 @@
 (ATTRIBUTE-FILLER QUICK_SHOT 70 hasLevelRequirement)
 (ATTRIBUTE-FILLER QUICK_SHOT "Can draw a bow 30% faster." hasDescription)
 
+
 ; light armor
 (INSTANCE AGILE_DEFENDER SKILL)
 (ATTRIBUTE-FILLER AGILE_DEFENDER 0 hasLevelRequirement)
@@ -958,13 +968,13 @@
 (ATTRIBUTE-FILLER CUSTOM_FIT 30 hasLevelRequirement)
 (ATTRIBUTE-FILLER CUSTOM_FIT "25% Armor bonus if wearing all Light Armor: head, chest, hands, feet." hasDescription)
 
-(INSTANCE MATCHING_SET SKILL)
-(RELATED MATCHING_SET CUSTOM_FIT hasSkillRequirement)
-(ATTRIBUTE-FILLER MATCHING_SET 70 hasLevelRequirement)
-(ATTRIBUTE-FILLER MATCHING_SET "Additional 25% Armor bonus if wearing a matched set of Light Armor." hasDescription)
+(INSTANCE MATCHING_SET_LIGHT SKILL)
+(RELATED MATCHING_SET_LIGHT CUSTOM_FIT hasSkillRequirement)
+(ATTRIBUTE-FILLER MATCHING_SET_LIGHT 70 hasLevelRequirement)
+(ATTRIBUTE-FILLER MATCHING_SET_LIGHT "Additional 25% Armor bonus if wearing a matched set of Light Armor." hasDescription)
 
 (INSTANCE DEFT_MOVEMENT SKILL)
-(RELATED DEFT_MOVEMENT MATCHING_SET hasSkillRequirement)
+(RELATED DEFT_MOVEMENT MATCHING_SET_LIGHT hasSkillRequirement)
 (ATTRIBUTE-FILLER DEFT_MOVEMENT 100 hasLevelRequirement)
 (ATTRIBUTE-FILLER DEFT_MOVEMENT "10% chance of avoiding all damage from a melee attack while wearing all Light Armor: head, chest, hands, feet." hasDescription)
 
@@ -977,7 +987,6 @@
 (RELATED WIND_WALKER UNHINDERED hasSkillRequirement)
 (ATTRIBUTE-FILLER WIND_WALKER 60 hasLevelRequirement)
 (ATTRIBUTE-FILLER WIND_WALKER "Stamina regenerates 50% faster in all Light Armor: head, chest, hands, feet." hasDescription)
-
 
 ; -------------------------------------- LINK SKILLS AND SKILL CLASSES ----------------------------------------
 
@@ -1372,8 +1381,8 @@
 (RELATED LIGHT_ARMOR AGILE_DEFENDER hasSkill)
 (RELATED CUSTOM_FIT LIGHT_ARMOR hasClass)
 (RELATED LIGHT_ARMOR CUSTOM_FIT hasSkill)
-(RELATED MATCHING_SET LIGHT_ARMOR hasClass)
-(RELATED LIGHT_ARMOR MATCHING_SET hasSkill)
+(RELATED MATCHING_SET_LIGHT LIGHT_ARMOR hasClass)
+(RELATED LIGHT_ARMOR MATCHING_SET_LIGHT hasSkill)
 (RELATED DEFT_MOVEMENT LIGHT_ARMOR hasClass)
 (RELATED LIGHT_ARMOR DEFT_MOVEMENT hasSkill)
 (RELATED UNHINDERED LIGHT_ARMOR hasClass)
@@ -1421,7 +1430,7 @@
 (RELATED ENCHANTING PRIEST isSuitable)
 (RELATED ALTERATION PRIEST isSuitable)
 
--------------------------------------------------- MISC --------------------------------------------------
+;-------------------------------------------------- MISC --------------------------------------------------
 
 ; skills are split among two main sets: upgradeable and not upgradeable
 ; the sets are disjoint
