@@ -1,4 +1,5 @@
 (FULL-RESET)
+
 ; skill classes
 (IMPLIES SNEAK SKILL_CLASS)
 (IMPLIES LOCKPICKING SKILL_CLASS)
@@ -42,7 +43,10 @@
 (INSTANCE THIEF BUILD)
 (INSTANCE PRIEST BUILD)
 
-; ----------------------------------- SKILLS, DESCRIPTION AND REQUIREMENTS -------------------------------------
+
+; ------------------------------------------------------
+; SKILLS, DESCRIPTION AND REQUIREMENTS
+; ------------------------------------------------------
 
 ; sneak
 (INSTANCE STEALTH SKILL)
@@ -1168,7 +1172,9 @@
 (ATTRIBUTE-FILLER WIND_WALKER 60 hasLevelRequirement)
 (ATTRIBUTE-FILLER WIND_WALKER "Stamina regenerates 50% faster in all Light Armor: head, chest, hands, feet." hasDescription)
 
-; -------------------------------------- LINK SKILL CLASSES AND BUILDS -------------------------------------------
+; ------------------------------------------------------
+; LINK SKILL CLASSES AND BUILDS
+; ------------------------------------------------------
 ; suitable skill classes for builds
 (RELATED TWO_HANDED BARBARIAN isSuitable)
 (RELATED HEAVY_ARMOR BARBARIAN isSuitable)
@@ -1208,7 +1214,10 @@
 (RELATED ENCHANTING PRIEST isSuitable)
 (RELATED ALTERATION PRIEST isSuitable)
 
-;-------------------------------------------------- MISC --------------------------------------------------
+
+; ------------------------------------------------------
+; MISC
+; ------------------------------------------------------
 
 ; skills are split among two main sets: upgradeable and not upgradeable
 ; the sets are disjoint

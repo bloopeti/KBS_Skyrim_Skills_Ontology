@@ -1,9 +1,9 @@
 (full-reset)
 (racer-read-file "/home/nicu/Desktop/KBS/TES-V-SkyrimSkillsOntology/onto.racer")
 
-;---------------------------
+------------------------------------------------------
 ;Consistency
-;---------------------------
+------------------------------------------------------
 
 (abox-consistent?)				
 (tbox-cyclic?)
@@ -12,9 +12,9 @@
 (realize-abox)
 (classify-tbox)
 
-; ---------------------------
+; ------------------------------------------------------
 ; Size
-; ---------------------------
+; ------------------------------------------------------
 
 
 (evaluate (length (all-individuals)))
@@ -31,9 +31,9 @@
 	
 (taxonomy)				
 
-; ---------------------------
+; ------------------------------------------------------
 ; Expressivity
-; ---------------------------
+; ------------------------------------------------------
 
 (get-tbox-language)
 (get-abox-language)
@@ -41,9 +41,9 @@
 (all-features)
 (all-transitive-roles)
 
-; ---------------------------
+; ------------------------------------------------------
 ; Domain coverage - competency questions
-; ---------------------------
+; ------------------------------------------------------
 
 ; ------------------------------------------------------
 ; CQ1:
@@ -54,43 +54,43 @@
 ; ------------------------------------------------------
 ; CQ2:
 (evaluate "CQ2: What are the classes of characters I can play?")
-; ----------------- REPLACE THIS LINE WITH ANSWER QUERY -----------------
+; --------- REPLACE THIS LINE WITH ANSWER QUERY ---------
 ; ------------------------------------------------------
 
 ; ------------------------------------------------------
 ; CQ3:
 (evaluate "CQ3: What are the skills suitable for class X?")
-; ----------------- REPLACE THIS LINE WITH ANSWER QUERY -----------------
+; --------- REPLACE THIS LINE WITH ANSWER QUERY ---------
 ; ------------------------------------------------------
 
 ; ------------------------------------------------------
 ; CQ4:
 (evaluate "CQ4: Should I invest in skill tree X if my character is class Y?")
-; ----------------- REPLACE THIS LINE WITH ANSWER QUERY -----------------
+; --------- REPLACE THIS LINE WITH ANSWER QUERY ---------
 ; ------------------------------------------------------
 
 ; ------------------------------------------------------
 ; CQ5:
 (evaluate "CQ5: What skills can I unlock at level X?")
-; ----------------- REPLACE THIS LINE WITH ANSWER QUERY -----------------
+; --------- REPLACE THIS LINE WITH ANSWER QUERY ---------
 ; ------------------------------------------------------
 
 ; ------------------------------------------------------
 ; CQ6:
 (evaluate "CQ6: What skill is required for unlocking skill X?")
-; ----------------- REPLACE THIS LINE WITH ANSWER QUERY -----------------
+; --------- REPLACE THIS LINE WITH ANSWER QUERY ---------
 ; ------------------------------------------------------
 
 ; ------------------------------------------------------
 ; CQ7:
 (evaluate "CQ7: What level is required for unlocking skill X?")
-; ----------------- REPLACE THIS LINE WITH ANSWER QUERY -----------------
+; --------- REPLACE THIS LINE WITH ANSWER QUERY ---------
 ; ------------------------------------------------------
 
 ; ------------------------------------------------------
 ; CQ8:
 (evaluate "CQ8: What are the perks provided by skill X?")
-; ----------------- REPLACE THIS LINE WITH ANSWER QUERY -----------------
+; --------- REPLACE THIS LINE WITH ANSWER QUERY ---------
 ; ------------------------------------------------------
 
 ; racer calls, rule/set querries
@@ -98,9 +98,6 @@
 (CONCEPT-INSTANCES UPGRADEABLE)
 
 ; role querries
-(INDIVIDUAL-FILLERS SNEAK hasSkill)
-(INDIVIDUAL-FILLERS SILENCE hasClass)
-(INDIVIDUAL-FILLERS SPEECH hasSkill)
 (INDIVIDUAL-FILLERS PRIEST (inv isSuitable))
 (INDIVIDUAL-FILLERS BACKSTAB hasSkillRequirement)
 

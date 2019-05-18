@@ -14,7 +14,34 @@
 \usepackage{pdfpages}
 \usepackage{graphicx}
 \usepackage{mathtools}
+\usepackage{url}
 \graphicspath{ {fig/} }
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+ 
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
 
 \usepackage[backend=bibtex, style=alphabetic, sorting=ynt]{biblatex}
 \addbibresource{BOC_2013.bib}
@@ -82,9 +109,9 @@ Competency questions:
 \section{Related ontologies}
 The ontologies we found were related to ours based on the fact that they all tackle the topic of video games.
 \begin{itemize}
-    \item Dota 2 ontology - An ontology describing a scenario from the game - https://ontohub.org/repositories/dota-2-ontology
-    \item Core Game Ontology - An ontology classifying games by their properties - http://autosemanticgame.institutedigitalgames.com/ontologies/core-game-ontology/
-    \item Dota 2 item ontology - An ontology about the items and builds in Dota 2 - https://ontohub.org/boc2018/Dota\%202\%20Item\%20ontology
+    \item Dota 2 ontology - An ontology describing a scenario from the game - \url{https://ontohub.org/repositories/dota-2-ontology}
+    \item Core Game Ontology - An ontology classifying games by their properties - \url{http://autosemanticgame.institutedigitalgames.com/ontologies/core-game-ontology/}
+    \item Dota 2 item ontology - An ontology about the items and builds in Dota 2 - \url{https://ontohub.org/boc2018/Dota\%202\%20Item\%20ontology}
 \end{itemize}
 
 Unfortunately none of these ontologies are useful to us, as we tackle a very specific topic. None of them will be used.
@@ -115,9 +142,14 @@ Unfortunately none of these ontologies are useful to us, as we tackle a very spe
 
 \chapter{Original code}
 \section{Racer ontology}
+\lstinputlisting{../onto.racer}
 
 
-\printbibliography
+\section{Racer evaluation}
+\lstinputlisting{../evaluation.racer}
+
+
+%\printbibliography
 
 \vspace{2cm}
 \begin{center}
