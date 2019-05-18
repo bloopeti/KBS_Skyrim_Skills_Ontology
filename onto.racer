@@ -1225,18 +1225,14 @@
 (IMPLIES NOT_UPGRADEABLE SKILL)
 (DISJOINT NOT_UGRADEABLE UPGRADEABLE)
 
-; a skill has a class
-; a class has many skills
-(define-primitive-role hasSkill :domain SKILL_CLASS :range SKILL)
-(define-primitive-role hasClass :domain SKILL :range SKILL_CLASS)
 (define-primitive-role isSuitable :domain SKILL_CLASS :range BUILD)
 (define-primitive-role hasSkillRequirement :domain SKILL :range SKILL)
-
-; rules
-(define-rule (?x NOT_UPGRADEABLE) (and (?x SKILL) (neg (?x UPGRADEABLE))))
 
 ; attributes
 (define-concrete-domain-attribute hasLevelRequirement :TYPE INTEGER)
 (define-concrete-domain-attribute hasDescription :TYPE STRING)
+
+; rules
+(define-rule (?x NOT_UPGRADEABLE) (and (?x SKILL) (neg (?x UPGRADEABLE))))
 
 (run-all-rules)
