@@ -1223,7 +1223,7 @@
 ; the sets are disjoint
 (IMPLIES UPGRADEABLE SKILL)
 (IMPLIES NOT_UPGRADEABLE SKILL)
-(DISJOINT NOT_UGRADEABLE UPGRADEABLE)
+(DISJOINT NOT_UPGRADEABLE UPGRADEABLE)
 
 (define-primitive-role isSuitable :domain SKILL_CLASS :range BUILD)
 (define-primitive-role hasSkillRequirement :domain SKILL :range SKILL)
