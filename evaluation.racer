@@ -1,5 +1,5 @@
 (full-reset)
-(racer-read-file "/home/nicu/Desktop/KBS/TES-V-SkyrimSkillsOntology/onto.racer")
+(racer-read-file "/home/nicu/Desktop/kbs_skyrim_ontology/onto.racer")
 
 ------------------------------------------------------
 ;Consistency
@@ -53,53 +53,49 @@
 
 ; ------------------------------------------------------
 ; CQ2:
-(evaluate "CQ2: What are the classes of characters I can play?")
-; --------- REPLACE THIS LINE WITH ANSWER QUERY ---------
+(evaluate "CQ2: What are the races of characters I can play?")
+;
+(concept-instances RACE)
 ; ------------------------------------------------------
 
 ; ------------------------------------------------------
 ; CQ3:
-(evaluate "CQ3: What are the skills suitable for class X?")
-; --------- REPLACE THIS LINE WITH ANSWER QUERY ---------
+(evaluate "CQ3: What are the skills suitable for class priest?")
+;
+(individual-fillers PRIEST (inv isSuitable))
 ; ------------------------------------------------------
 
 ; ------------------------------------------------------
 ; CQ4:
-(evaluate "CQ4: Should I invest in skill tree X if my character is class Y?")
-; --------- REPLACE THIS LINE WITH ANSWER QUERY ---------
+(evaluate "CQ4: Should I invest in skill tree oneHanded if my character is class priest?")
+; 
+(individuals-related? ONE_HANDED PRIEST isSuitable)
 ; ------------------------------------------------------
 
 ; ------------------------------------------------------
 ; CQ5:
-(evaluate "CQ5: What skills can I unlock at level X?")
-; --------- REPLACE THIS LINE WITH ANSWER QUERY ---------
+(evaluate "CQ5: What skills can I unlock at level 50?")
+; 
+(retrieve (?x) (and (?x SKILL) (?x (equal hasLevelRequirement 50))))
 ; ------------------------------------------------------
 
 ; ------------------------------------------------------
 ; CQ6:
-(evaluate "CQ6: What skill is required for unlocking skill X?")
-; --------- REPLACE THIS LINE WITH ANSWER QUERY ---------
+(evaluate "CQ6: What skill is required for unlocking skill powerBash?")
+; 
+(individual-fillers POWER_BASH hasSkillRequirement)
 ; ------------------------------------------------------
 
 ; ------------------------------------------------------
 ; CQ7:
-(evaluate "CQ7: What level is required for unlocking skill X?")
-; --------- REPLACE THIS LINE WITH ANSWER QUERY ---------
+(evaluate "CQ7: What level is required for unlocking skill backstab?")
+; 
+(individual-told-attribute-value BACKSTAB hasLevelRequirement)
 ; ------------------------------------------------------
 
 ; ------------------------------------------------------
 ; CQ8:
-(evaluate "CQ8: What are the perks provided by skill X?")
-; --------- REPLACE THIS LINE WITH ANSWER QUERY ---------
+(evaluate "CQ8: What are the perks provided by skill disintegrate?")
+;
+(individual-told-attribute-value DISINTEGRATE hasDescription)
 ; ------------------------------------------------------
-
-; racer calls, rule/set querries
-(CONCEPT-INSTANCES SKILL_CLASS)
-(CONCEPT-INSTANCES UPGRADEABLE)
-
-; role querries
-(INDIVIDUAL-FILLERS PRIEST (inv isSuitable))
-(INDIVIDUAL-FILLERS BACKSTAB hasSkillRequirement)
-
-; attribute query
-(INDIVIDUAL-TOLD-ATTRIBUTE-VALUE RUNE_MASTER hasDescription)
