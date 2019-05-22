@@ -1,0 +1,2816 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:owl2="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+   xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+   xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+   <owl:Ontology rdf:about=""/>
+   <owl:ObjectProperty rdf:about="ISSUITABLE">
+      <rdfs:domain>
+         <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+               <owl:Class>
+                  <owl:intersectionOf rdf:parseType="Collection">
+                     <owl:Class rdf:about="SKILL_CLASS"/>
+                  </owl:intersectionOf>
+               </owl:Class>
+            </owl:intersectionOf>
+         </owl:Class>
+      </rdfs:domain>
+      <rdfs:range>
+         <owl:Class rdf:about="BUILD"/>
+      </rdfs:range>
+   </owl:ObjectProperty>
+   <owl:DatatypeProperty rdf:about="HASLEVELREQUIREMENT">
+      <rdfs:range resource="http://www.w3.org/2001/XMLSchema#int"/>
+   </owl:DatatypeProperty>
+   <owl:DatatypeProperty rdf:about="HASDESCRIPTION">
+      <rdfs:range resource="http://www.w3.org/2001/XMLSchema#string"/>
+   </owl:DatatypeProperty>
+   <owl:ObjectProperty rdf:about="HASSKILLREQUIREMENT">
+      <rdfs:domain>
+         <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+               <owl:Class>
+                  <owl:intersectionOf rdf:parseType="Collection">
+                     <owl:Class rdf:about="SKILL"/>
+                  </owl:intersectionOf>
+               </owl:Class>
+            </owl:intersectionOf>
+         </owl:Class>
+      </rdfs:domain>
+      <rdfs:range>
+         <owl:Class rdf:about="SKILL"/>
+      </rdfs:range>
+   </owl:ObjectProperty>
+   <owl:Class rdf:about="LIGHT_ARMOR">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ARCHERY"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="LIGHT_ARMOR">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ONE_HANDED"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="LIGHT_ARMOR">
+      <owl:disjointWith>
+         <owl:Class rdf:about="TWO_HANDED"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="LIGHT_ARMOR">
+      <owl:disjointWith>
+         <owl:Class rdf:about="BLOCK"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="LIGHT_ARMOR">
+      <owl:disjointWith>
+         <owl:Class rdf:about="HEAVY_ARMOR"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="LIGHT_ARMOR">
+      <owl:disjointWith>
+         <owl:Class rdf:about="SMITHING"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="LIGHT_ARMOR">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ENCHANTING"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="LIGHT_ARMOR">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ALTERATION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="LIGHT_ARMOR">
+      <owl:disjointWith>
+         <owl:Class rdf:about="RESTORATION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="LIGHT_ARMOR">
+      <owl:disjointWith>
+         <owl:Class rdf:about="DESTRUCTION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="LIGHT_ARMOR">
+      <owl:disjointWith>
+         <owl:Class rdf:about="CONJURATION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="LIGHT_ARMOR">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ILLUSION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="LIGHT_ARMOR">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ALCHEMY"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="LIGHT_ARMOR">
+      <owl:disjointWith>
+         <owl:Class rdf:about="SPEECH"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="LIGHT_ARMOR">
+      <owl:disjointWith>
+         <owl:Class rdf:about="PICKPOCKET"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="LIGHT_ARMOR">
+      <owl:disjointWith>
+         <owl:Class rdf:about="LOCKPICKING"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="LIGHT_ARMOR">
+      <owl:disjointWith>
+         <owl:Class rdf:about="SNEAK"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ARCHERY">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ONE_HANDED"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ARCHERY">
+      <owl:disjointWith>
+         <owl:Class rdf:about="TWO_HANDED"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ARCHERY">
+      <owl:disjointWith>
+         <owl:Class rdf:about="BLOCK"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ARCHERY">
+      <owl:disjointWith>
+         <owl:Class rdf:about="HEAVY_ARMOR"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ARCHERY">
+      <owl:disjointWith>
+         <owl:Class rdf:about="SMITHING"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ARCHERY">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ENCHANTING"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ARCHERY">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ALTERATION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ARCHERY">
+      <owl:disjointWith>
+         <owl:Class rdf:about="RESTORATION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ARCHERY">
+      <owl:disjointWith>
+         <owl:Class rdf:about="DESTRUCTION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ARCHERY">
+      <owl:disjointWith>
+         <owl:Class rdf:about="CONJURATION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ARCHERY">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ILLUSION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ARCHERY">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ALCHEMY"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ARCHERY">
+      <owl:disjointWith>
+         <owl:Class rdf:about="SPEECH"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ARCHERY">
+      <owl:disjointWith>
+         <owl:Class rdf:about="PICKPOCKET"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ARCHERY">
+      <owl:disjointWith>
+         <owl:Class rdf:about="LOCKPICKING"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ARCHERY">
+      <owl:disjointWith>
+         <owl:Class rdf:about="SNEAK"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ONE_HANDED">
+      <owl:disjointWith>
+         <owl:Class rdf:about="TWO_HANDED"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ONE_HANDED">
+      <owl:disjointWith>
+         <owl:Class rdf:about="BLOCK"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ONE_HANDED">
+      <owl:disjointWith>
+         <owl:Class rdf:about="HEAVY_ARMOR"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ONE_HANDED">
+      <owl:disjointWith>
+         <owl:Class rdf:about="SMITHING"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ONE_HANDED">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ENCHANTING"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ONE_HANDED">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ALTERATION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ONE_HANDED">
+      <owl:disjointWith>
+         <owl:Class rdf:about="RESTORATION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ONE_HANDED">
+      <owl:disjointWith>
+         <owl:Class rdf:about="DESTRUCTION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ONE_HANDED">
+      <owl:disjointWith>
+         <owl:Class rdf:about="CONJURATION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ONE_HANDED">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ILLUSION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ONE_HANDED">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ALCHEMY"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ONE_HANDED">
+      <owl:disjointWith>
+         <owl:Class rdf:about="SPEECH"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ONE_HANDED">
+      <owl:disjointWith>
+         <owl:Class rdf:about="PICKPOCKET"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ONE_HANDED">
+      <owl:disjointWith>
+         <owl:Class rdf:about="LOCKPICKING"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ONE_HANDED">
+      <owl:disjointWith>
+         <owl:Class rdf:about="SNEAK"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="TWO_HANDED">
+      <owl:disjointWith>
+         <owl:Class rdf:about="BLOCK"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="TWO_HANDED">
+      <owl:disjointWith>
+         <owl:Class rdf:about="HEAVY_ARMOR"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="TWO_HANDED">
+      <owl:disjointWith>
+         <owl:Class rdf:about="SMITHING"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="TWO_HANDED">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ENCHANTING"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="TWO_HANDED">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ALTERATION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="TWO_HANDED">
+      <owl:disjointWith>
+         <owl:Class rdf:about="RESTORATION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="TWO_HANDED">
+      <owl:disjointWith>
+         <owl:Class rdf:about="DESTRUCTION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="TWO_HANDED">
+      <owl:disjointWith>
+         <owl:Class rdf:about="CONJURATION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="TWO_HANDED">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ILLUSION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="TWO_HANDED">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ALCHEMY"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="TWO_HANDED">
+      <owl:disjointWith>
+         <owl:Class rdf:about="SPEECH"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="TWO_HANDED">
+      <owl:disjointWith>
+         <owl:Class rdf:about="PICKPOCKET"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="TWO_HANDED">
+      <owl:disjointWith>
+         <owl:Class rdf:about="LOCKPICKING"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="TWO_HANDED">
+      <owl:disjointWith>
+         <owl:Class rdf:about="SNEAK"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="BLOCK">
+      <owl:disjointWith>
+         <owl:Class rdf:about="HEAVY_ARMOR"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="BLOCK">
+      <owl:disjointWith>
+         <owl:Class rdf:about="SMITHING"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="BLOCK">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ENCHANTING"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="BLOCK">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ALTERATION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="BLOCK">
+      <owl:disjointWith>
+         <owl:Class rdf:about="RESTORATION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="BLOCK">
+      <owl:disjointWith>
+         <owl:Class rdf:about="DESTRUCTION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="BLOCK">
+      <owl:disjointWith>
+         <owl:Class rdf:about="CONJURATION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="BLOCK">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ILLUSION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="BLOCK">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ALCHEMY"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="BLOCK">
+      <owl:disjointWith>
+         <owl:Class rdf:about="SPEECH"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="BLOCK">
+      <owl:disjointWith>
+         <owl:Class rdf:about="PICKPOCKET"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="BLOCK">
+      <owl:disjointWith>
+         <owl:Class rdf:about="LOCKPICKING"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="BLOCK">
+      <owl:disjointWith>
+         <owl:Class rdf:about="SNEAK"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="HEAVY_ARMOR">
+      <owl:disjointWith>
+         <owl:Class rdf:about="SMITHING"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="HEAVY_ARMOR">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ENCHANTING"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="HEAVY_ARMOR">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ALTERATION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="HEAVY_ARMOR">
+      <owl:disjointWith>
+         <owl:Class rdf:about="RESTORATION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="HEAVY_ARMOR">
+      <owl:disjointWith>
+         <owl:Class rdf:about="DESTRUCTION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="HEAVY_ARMOR">
+      <owl:disjointWith>
+         <owl:Class rdf:about="CONJURATION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="HEAVY_ARMOR">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ILLUSION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="HEAVY_ARMOR">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ALCHEMY"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="HEAVY_ARMOR">
+      <owl:disjointWith>
+         <owl:Class rdf:about="SPEECH"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="HEAVY_ARMOR">
+      <owl:disjointWith>
+         <owl:Class rdf:about="PICKPOCKET"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="HEAVY_ARMOR">
+      <owl:disjointWith>
+         <owl:Class rdf:about="LOCKPICKING"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="HEAVY_ARMOR">
+      <owl:disjointWith>
+         <owl:Class rdf:about="SNEAK"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="SMITHING">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ENCHANTING"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="SMITHING">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ALTERATION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="SMITHING">
+      <owl:disjointWith>
+         <owl:Class rdf:about="RESTORATION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="SMITHING">
+      <owl:disjointWith>
+         <owl:Class rdf:about="DESTRUCTION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="SMITHING">
+      <owl:disjointWith>
+         <owl:Class rdf:about="CONJURATION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="SMITHING">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ILLUSION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="SMITHING">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ALCHEMY"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="SMITHING">
+      <owl:disjointWith>
+         <owl:Class rdf:about="SPEECH"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="SMITHING">
+      <owl:disjointWith>
+         <owl:Class rdf:about="PICKPOCKET"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="SMITHING">
+      <owl:disjointWith>
+         <owl:Class rdf:about="LOCKPICKING"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="SMITHING">
+      <owl:disjointWith>
+         <owl:Class rdf:about="SNEAK"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ENCHANTING">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ALTERATION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ENCHANTING">
+      <owl:disjointWith>
+         <owl:Class rdf:about="RESTORATION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ENCHANTING">
+      <owl:disjointWith>
+         <owl:Class rdf:about="DESTRUCTION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ENCHANTING">
+      <owl:disjointWith>
+         <owl:Class rdf:about="CONJURATION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ENCHANTING">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ILLUSION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ENCHANTING">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ALCHEMY"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ENCHANTING">
+      <owl:disjointWith>
+         <owl:Class rdf:about="SPEECH"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ENCHANTING">
+      <owl:disjointWith>
+         <owl:Class rdf:about="PICKPOCKET"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ENCHANTING">
+      <owl:disjointWith>
+         <owl:Class rdf:about="LOCKPICKING"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ENCHANTING">
+      <owl:disjointWith>
+         <owl:Class rdf:about="SNEAK"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ALTERATION">
+      <owl:disjointWith>
+         <owl:Class rdf:about="RESTORATION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ALTERATION">
+      <owl:disjointWith>
+         <owl:Class rdf:about="DESTRUCTION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ALTERATION">
+      <owl:disjointWith>
+         <owl:Class rdf:about="CONJURATION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ALTERATION">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ILLUSION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ALTERATION">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ALCHEMY"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ALTERATION">
+      <owl:disjointWith>
+         <owl:Class rdf:about="SPEECH"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ALTERATION">
+      <owl:disjointWith>
+         <owl:Class rdf:about="PICKPOCKET"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ALTERATION">
+      <owl:disjointWith>
+         <owl:Class rdf:about="LOCKPICKING"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ALTERATION">
+      <owl:disjointWith>
+         <owl:Class rdf:about="SNEAK"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="RESTORATION">
+      <owl:disjointWith>
+         <owl:Class rdf:about="DESTRUCTION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="RESTORATION">
+      <owl:disjointWith>
+         <owl:Class rdf:about="CONJURATION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="RESTORATION">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ILLUSION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="RESTORATION">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ALCHEMY"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="RESTORATION">
+      <owl:disjointWith>
+         <owl:Class rdf:about="SPEECH"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="RESTORATION">
+      <owl:disjointWith>
+         <owl:Class rdf:about="PICKPOCKET"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="RESTORATION">
+      <owl:disjointWith>
+         <owl:Class rdf:about="LOCKPICKING"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="RESTORATION">
+      <owl:disjointWith>
+         <owl:Class rdf:about="SNEAK"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="DESTRUCTION">
+      <owl:disjointWith>
+         <owl:Class rdf:about="CONJURATION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="DESTRUCTION">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ILLUSION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="DESTRUCTION">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ALCHEMY"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="DESTRUCTION">
+      <owl:disjointWith>
+         <owl:Class rdf:about="SPEECH"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="DESTRUCTION">
+      <owl:disjointWith>
+         <owl:Class rdf:about="PICKPOCKET"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="DESTRUCTION">
+      <owl:disjointWith>
+         <owl:Class rdf:about="LOCKPICKING"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="DESTRUCTION">
+      <owl:disjointWith>
+         <owl:Class rdf:about="SNEAK"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="CONJURATION">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ILLUSION"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="CONJURATION">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ALCHEMY"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="CONJURATION">
+      <owl:disjointWith>
+         <owl:Class rdf:about="SPEECH"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="CONJURATION">
+      <owl:disjointWith>
+         <owl:Class rdf:about="PICKPOCKET"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="CONJURATION">
+      <owl:disjointWith>
+         <owl:Class rdf:about="LOCKPICKING"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="CONJURATION">
+      <owl:disjointWith>
+         <owl:Class rdf:about="SNEAK"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ILLUSION">
+      <owl:disjointWith>
+         <owl:Class rdf:about="ALCHEMY"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ILLUSION">
+      <owl:disjointWith>
+         <owl:Class rdf:about="SPEECH"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ILLUSION">
+      <owl:disjointWith>
+         <owl:Class rdf:about="PICKPOCKET"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ILLUSION">
+      <owl:disjointWith>
+         <owl:Class rdf:about="LOCKPICKING"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ILLUSION">
+      <owl:disjointWith>
+         <owl:Class rdf:about="SNEAK"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ALCHEMY">
+      <owl:disjointWith>
+         <owl:Class rdf:about="SPEECH"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ALCHEMY">
+      <owl:disjointWith>
+         <owl:Class rdf:about="PICKPOCKET"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ALCHEMY">
+      <owl:disjointWith>
+         <owl:Class rdf:about="LOCKPICKING"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="ALCHEMY">
+      <owl:disjointWith>
+         <owl:Class rdf:about="SNEAK"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="SPEECH">
+      <owl:disjointWith>
+         <owl:Class rdf:about="PICKPOCKET"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="SPEECH">
+      <owl:disjointWith>
+         <owl:Class rdf:about="LOCKPICKING"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="SPEECH">
+      <owl:disjointWith>
+         <owl:Class rdf:about="SNEAK"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="PICKPOCKET">
+      <owl:disjointWith>
+         <owl:Class rdf:about="LOCKPICKING"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="PICKPOCKET">
+      <owl:disjointWith>
+         <owl:Class rdf:about="SNEAK"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="LOCKPICKING">
+      <owl:disjointWith>
+         <owl:Class rdf:about="SNEAK"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="UPGRADEABLE">
+      <owl:disjointWith>
+         <owl:Class rdf:about="NOT_UPGRADEABLE"/>
+      </owl:disjointWith>
+   </owl:Class>
+   <owl:Class rdf:about="SNEAK">
+      <rdfs:subClassOf>
+         <owl:Class rdf:about="SKILL_CLASS"/>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:Class rdf:about="LOCKPICKING">
+      <rdfs:subClassOf>
+         <owl:Class rdf:about="SKILL_CLASS"/>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:Class rdf:about="PICKPOCKET">
+      <rdfs:subClassOf>
+         <owl:Class rdf:about="SKILL_CLASS"/>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:Class rdf:about="SPEECH">
+      <rdfs:subClassOf>
+         <owl:Class rdf:about="SKILL_CLASS"/>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:Class rdf:about="ALCHEMY">
+      <rdfs:subClassOf>
+         <owl:Class rdf:about="SKILL_CLASS"/>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:Class rdf:about="ILLUSION">
+      <rdfs:subClassOf>
+         <owl:Class rdf:about="SKILL_CLASS"/>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:Class rdf:about="CONJURATION">
+      <rdfs:subClassOf>
+         <owl:Class rdf:about="SKILL_CLASS"/>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:Class rdf:about="DESTRUCTION">
+      <rdfs:subClassOf>
+         <owl:Class rdf:about="SKILL_CLASS"/>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:Class rdf:about="RESTORATION">
+      <rdfs:subClassOf>
+         <owl:Class rdf:about="SKILL_CLASS"/>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:Class rdf:about="ALTERATION">
+      <rdfs:subClassOf>
+         <owl:Class rdf:about="SKILL_CLASS"/>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:Class rdf:about="ENCHANTING">
+      <rdfs:subClassOf>
+         <owl:Class rdf:about="SKILL_CLASS"/>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:Class rdf:about="SMITHING">
+      <rdfs:subClassOf>
+         <owl:Class rdf:about="SKILL_CLASS"/>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:Class rdf:about="HEAVY_ARMOR">
+      <rdfs:subClassOf>
+         <owl:Class rdf:about="SKILL_CLASS"/>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:Class rdf:about="BLOCK">
+      <rdfs:subClassOf>
+         <owl:Class rdf:about="SKILL_CLASS"/>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:Class rdf:about="TWO_HANDED">
+      <rdfs:subClassOf>
+         <owl:Class rdf:about="SKILL_CLASS"/>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:Class rdf:about="ONE_HANDED">
+      <rdfs:subClassOf>
+         <owl:Class rdf:about="SKILL_CLASS"/>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:Class rdf:about="ARCHERY">
+      <rdfs:subClassOf>
+         <owl:Class rdf:about="SKILL_CLASS"/>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:Class rdf:about="LIGHT_ARMOR">
+      <rdfs:subClassOf>
+         <owl:Class rdf:about="SKILL_CLASS"/>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:Class rdf:about="UPGRADEABLE">
+      <rdfs:subClassOf>
+         <owl:Class rdf:about="SKILL"/>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:Class rdf:about="NOT_UPGRADEABLE">
+      <rdfs:subClassOf>
+         <owl:Class rdf:about="SKILL"/>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:Class rdf:about="LIGHT_ARMOR">
+      <rdfs:subClassOf>
+         <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ARCHERY"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ONE_HANDED"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="TWO_HANDED"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="BLOCK"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="HEAVY_ARMOR"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="SMITHING"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ENCHANTING"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ALTERATION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="RESTORATION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="DESTRUCTION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="CONJURATION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ILLUSION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ALCHEMY"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="SPEECH"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="PICKPOCKET"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="LOCKPICKING"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="SNEAK"/>
+                  </owl:complementOf>
+               </owl:Class>
+            </owl:intersectionOf>
+         </owl:Class>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:Class rdf:about="ARCHERY">
+      <rdfs:subClassOf>
+         <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ONE_HANDED"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="TWO_HANDED"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="BLOCK"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="HEAVY_ARMOR"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="SMITHING"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ENCHANTING"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ALTERATION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="RESTORATION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="DESTRUCTION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="CONJURATION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ILLUSION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ALCHEMY"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="SPEECH"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="PICKPOCKET"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="LOCKPICKING"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="SNEAK"/>
+                  </owl:complementOf>
+               </owl:Class>
+            </owl:intersectionOf>
+         </owl:Class>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:Class rdf:about="ONE_HANDED">
+      <rdfs:subClassOf>
+         <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="TWO_HANDED"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="BLOCK"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="HEAVY_ARMOR"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="SMITHING"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ENCHANTING"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ALTERATION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="RESTORATION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="DESTRUCTION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="CONJURATION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ILLUSION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ALCHEMY"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="SPEECH"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="PICKPOCKET"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="LOCKPICKING"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="SNEAK"/>
+                  </owl:complementOf>
+               </owl:Class>
+            </owl:intersectionOf>
+         </owl:Class>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:Class rdf:about="TWO_HANDED">
+      <rdfs:subClassOf>
+         <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="BLOCK"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="HEAVY_ARMOR"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="SMITHING"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ENCHANTING"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ALTERATION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="RESTORATION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="DESTRUCTION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="CONJURATION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ILLUSION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ALCHEMY"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="SPEECH"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="PICKPOCKET"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="LOCKPICKING"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="SNEAK"/>
+                  </owl:complementOf>
+               </owl:Class>
+            </owl:intersectionOf>
+         </owl:Class>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:Class rdf:about="BLOCK">
+      <rdfs:subClassOf>
+         <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="HEAVY_ARMOR"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="SMITHING"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ENCHANTING"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ALTERATION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="RESTORATION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="DESTRUCTION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="CONJURATION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ILLUSION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ALCHEMY"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="SPEECH"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="PICKPOCKET"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="LOCKPICKING"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="SNEAK"/>
+                  </owl:complementOf>
+               </owl:Class>
+            </owl:intersectionOf>
+         </owl:Class>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:Class rdf:about="HEAVY_ARMOR">
+      <rdfs:subClassOf>
+         <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="SMITHING"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ENCHANTING"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ALTERATION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="RESTORATION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="DESTRUCTION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="CONJURATION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ILLUSION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ALCHEMY"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="SPEECH"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="PICKPOCKET"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="LOCKPICKING"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="SNEAK"/>
+                  </owl:complementOf>
+               </owl:Class>
+            </owl:intersectionOf>
+         </owl:Class>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:Class rdf:about="SMITHING">
+      <rdfs:subClassOf>
+         <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ENCHANTING"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ALTERATION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="RESTORATION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="DESTRUCTION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="CONJURATION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ILLUSION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ALCHEMY"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="SPEECH"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="PICKPOCKET"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="LOCKPICKING"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="SNEAK"/>
+                  </owl:complementOf>
+               </owl:Class>
+            </owl:intersectionOf>
+         </owl:Class>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:Class rdf:about="ENCHANTING">
+      <rdfs:subClassOf>
+         <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ALTERATION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="RESTORATION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="DESTRUCTION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="CONJURATION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ILLUSION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ALCHEMY"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="SPEECH"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="PICKPOCKET"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="LOCKPICKING"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="SNEAK"/>
+                  </owl:complementOf>
+               </owl:Class>
+            </owl:intersectionOf>
+         </owl:Class>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:Class rdf:about="ALTERATION">
+      <rdfs:subClassOf>
+         <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="RESTORATION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="DESTRUCTION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="CONJURATION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ILLUSION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ALCHEMY"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="SPEECH"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="PICKPOCKET"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="LOCKPICKING"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="SNEAK"/>
+                  </owl:complementOf>
+               </owl:Class>
+            </owl:intersectionOf>
+         </owl:Class>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:Class rdf:about="RESTORATION">
+      <rdfs:subClassOf>
+         <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="DESTRUCTION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="CONJURATION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ILLUSION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ALCHEMY"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="SPEECH"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="PICKPOCKET"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="LOCKPICKING"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="SNEAK"/>
+                  </owl:complementOf>
+               </owl:Class>
+            </owl:intersectionOf>
+         </owl:Class>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:Class rdf:about="DESTRUCTION">
+      <rdfs:subClassOf>
+         <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="CONJURATION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ILLUSION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ALCHEMY"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="SPEECH"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="PICKPOCKET"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="LOCKPICKING"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="SNEAK"/>
+                  </owl:complementOf>
+               </owl:Class>
+            </owl:intersectionOf>
+         </owl:Class>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:Class rdf:about="CONJURATION">
+      <rdfs:subClassOf>
+         <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ILLUSION"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ALCHEMY"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="SPEECH"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="PICKPOCKET"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="LOCKPICKING"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="SNEAK"/>
+                  </owl:complementOf>
+               </owl:Class>
+            </owl:intersectionOf>
+         </owl:Class>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:Class rdf:about="ILLUSION">
+      <rdfs:subClassOf>
+         <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="ALCHEMY"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="SPEECH"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="PICKPOCKET"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="LOCKPICKING"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="SNEAK"/>
+                  </owl:complementOf>
+               </owl:Class>
+            </owl:intersectionOf>
+         </owl:Class>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:Class rdf:about="ALCHEMY">
+      <rdfs:subClassOf>
+         <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="SPEECH"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="PICKPOCKET"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="LOCKPICKING"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="SNEAK"/>
+                  </owl:complementOf>
+               </owl:Class>
+            </owl:intersectionOf>
+         </owl:Class>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:Class rdf:about="SPEECH">
+      <rdfs:subClassOf>
+         <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="PICKPOCKET"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="LOCKPICKING"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="SNEAK"/>
+                  </owl:complementOf>
+               </owl:Class>
+            </owl:intersectionOf>
+         </owl:Class>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:Class rdf:about="PICKPOCKET">
+      <rdfs:subClassOf>
+         <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="LOCKPICKING"/>
+                  </owl:complementOf>
+               </owl:Class>
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="SNEAK"/>
+                  </owl:complementOf>
+               </owl:Class>
+            </owl:intersectionOf>
+         </owl:Class>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:Class rdf:about="LOCKPICKING">
+      <rdfs:subClassOf>
+         <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="SNEAK"/>
+                  </owl:complementOf>
+               </owl:Class>
+            </owl:intersectionOf>
+         </owl:Class>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:Class rdf:about="UPGRADEABLE">
+      <rdfs:subClassOf>
+         <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+               <owl:Class>
+                  <owl:complementOf>
+                     <owl:Class rdf:about="NOT_UPGRADEABLE"/>
+                  </owl:complementOf>
+               </owl:Class>
+            </owl:intersectionOf>
+         </owl:Class>
+      </rdfs:subClassOf>
+   </owl:Class>
+   <owl:Thing rdf:about="ALTERATION">
+      <ISSUITABLE rdf:resource="PRIEST"/>
+   </owl:Thing>
+   <BUILD rdf:about="PRIEST">
+   </BUILD>
+   <owl:Thing rdf:about="ENCHANTING">
+      <ISSUITABLE rdf:resource="PRIEST"/>
+   </owl:Thing>
+   <owl:Thing rdf:about="RESTORATION">
+      <ISSUITABLE rdf:resource="PRIEST"/>
+      <ISSUITABLE rdf:resource="PALADIN"/>
+   </owl:Thing>
+   <owl:Thing rdf:about="SPEECH">
+      <ISSUITABLE rdf:resource="PRIEST"/>
+   </owl:Thing>
+   <owl:Thing rdf:about="ONE_HANDED">
+      <ISSUITABLE rdf:resource="PRIEST"/>
+      <ISSUITABLE rdf:resource="ASSASSIN"/>
+      <ISSUITABLE rdf:resource="PALADIN"/>
+      <ISSUITABLE rdf:resource="BATTLEMAGE"/>
+   </owl:Thing>
+   <owl:Thing rdf:about="POCKPICKING">
+      <ISSUITABLE rdf:resource="THIEF"/>
+   </owl:Thing>
+   <BUILD rdf:about="THIEF">
+   </BUILD>
+   <owl:Thing rdf:about="SNEAK">
+      <ISSUITABLE rdf:resource="THIEF"/>
+      <ISSUITABLE rdf:resource="ASSASSIN"/>
+      <ISSUITABLE rdf:resource="STEALTH_ARCHER"/>
+   </owl:Thing>
+   <owl:Thing rdf:about="PICKPOCKET">
+      <ISSUITABLE rdf:resource="THIEF"/>
+      <ISSUITABLE rdf:resource="ASSASSIN"/>
+   </owl:Thing>
+   <owl:Thing rdf:about="ALCHEMY">
+      <ISSUITABLE rdf:resource="ASSASSIN"/>
+      <ISSUITABLE rdf:resource="WARLOCK"/>
+   </owl:Thing>
+   <owl:Thing rdf:about="LIGHT_ARMOR">
+      <ISSUITABLE rdf:resource="ASSASSIN"/>
+      <ISSUITABLE rdf:resource="STEALTH_ARCHER"/>
+      <ISSUITABLE rdf:resource="BATTLEMAGE"/>
+   </owl:Thing>
+   <BUILD rdf:about="PALADIN">
+   </BUILD>
+   <owl:Thing rdf:about="BLOCK">
+      <ISSUITABLE rdf:resource="PALADIN"/>
+   </owl:Thing>
+   <owl:Thing rdf:about="HEAVY_ARMOR">
+      <ISSUITABLE rdf:resource="PALADIN"/>
+      <ISSUITABLE rdf:resource="BARBARIAN"/>
+   </owl:Thing>
+   <owl:Thing rdf:about="DESTRUCTION">
+      <ISSUITABLE rdf:resource="WARLOCK"/>
+      <ISSUITABLE rdf:resource="BATTLEMAGE"/>
+   </owl:Thing>
+   <BUILD rdf:about="WARLOCK">
+   </BUILD>
+   <owl:Thing rdf:about="CONJURATION">
+      <ISSUITABLE rdf:resource="WARLOCK"/>
+   </owl:Thing>
+   <owl:Thing rdf:about="ILLUSION">
+      <ISSUITABLE rdf:resource="WARLOCK"/>
+   </owl:Thing>
+   <BUILD rdf:about="STEALTH_ARCHER">
+   </BUILD>
+   <owl:Thing rdf:about="ARCHERY">
+      <ISSUITABLE rdf:resource="STEALTH_ARCHER"/>
+   </owl:Thing>
+   <BUILD rdf:about="BATTLEMAGE">
+   </BUILD>
+   <owl:Thing rdf:about="SMITHING">
+      <ISSUITABLE rdf:resource="BARBARIAN"/>
+   </owl:Thing>
+   <UPGRADEABLE rdf:about="BARBARIAN">
+      <rdf:type rdf:resource="TWO_HANDED"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <rdf:type rdf:resource="BUILD"/>
+   </UPGRADEABLE>
+   <owl:Thing rdf:about="TWO_HANDED">
+      <ISSUITABLE rdf:resource="BARBARIAN"/>
+   </owl:Thing>
+   <NOT_UPGRADEABLE rdf:about="WIND_WALKER">
+      <rdf:type rdf:resource="LIGHT_ARMOR"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="UNHINDERED"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="UNHINDERED">
+      <rdf:type rdf:resource="LIGHT_ARMOR"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="CUSTOM_FIT"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="CUSTOM_FIT">
+      <rdf:type rdf:resource="LIGHT_ARMOR"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="AGILE_DEFENDER"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="DEFT_MOVEMENT">
+      <rdf:type rdf:resource="LIGHT_ARMOR"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="MATCHING_SET_LIGHT"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="MATCHING_SET_LIGHT">
+      <rdf:type rdf:resource="LIGHT_ARMOR"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="CUSTOM_FIT"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="AGILE_DEFENDER">
+      <rdf:type rdf:resource="LIGHT_ARMOR"/>
+      <rdf:type rdf:resource="SKILL"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="QUICK_SHOT">
+      <rdf:type rdf:resource="ARCHERY"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="POWER_SHOT"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="POWER_SHOT">
+      <rdf:type rdf:resource="ARCHERY"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="EAGLE_EYE"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="EAGLE_EYE">
+      <rdf:type rdf:resource="ARCHERY"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="OVERDRAW"/>
+   </NOT_UPGRADEABLE>
+   <UPGRADEABLE rdf:about="STEADY_HAND">
+      <rdf:type rdf:resource="ARCHERY"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="EAGLE_EYE"/>
+   </UPGRADEABLE>
+   <UPGRADEABLE rdf:about="OVERDRAW">
+      <rdf:type rdf:resource="ARCHERY"/>
+      <rdf:type rdf:resource="SKILL"/>
+   </UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="BULLSEYE">
+      <rdf:type rdf:resource="ARCHERY"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="RANGER"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="RANGER">
+      <rdf:type rdf:resource="ARCHERY"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="HUNTERS_DISCIPLINE"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="HUNTERS_DISCIPLINE">
+      <rdf:type rdf:resource="ARCHERY"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="CRITICAL_SHOT"/>
+   </NOT_UPGRADEABLE>
+   <UPGRADEABLE rdf:about="CRITICAL_SHOT">
+      <rdf:type rdf:resource="ARCHERY"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="OVERDRAW"/>
+   </UPGRADEABLE>
+   <UPGRADEABLE rdf:about="HACK_AND_SLASH">
+      <rdf:type rdf:resource="ONE_HANDED"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="ARMSMAN"/>
+   </UPGRADEABLE>
+   <UPGRADEABLE rdf:about="ARMSMAN">
+      <rdf:type rdf:resource="ONE_HANDED"/>
+      <rdf:type rdf:resource="SKILL"/>
+   </UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="SAVAGE_STRIKE">
+      <rdf:type rdf:resource="ONE_HANDED"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="FIGHTING_STANCE"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="FIGHTING_STANCE">
+      <rdf:type rdf:resource="ONE_HANDED"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="ARMSMAN"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="PARALYZING_STRIKE">
+      <rdf:type rdf:resource="ONE_HANDED"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="CRITICAL_CHARGE"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="CRITICAL_CHARGE">
+      <rdf:type rdf:resource="ONE_HANDED"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="FIGHTING_STANCE"/>
+   </NOT_UPGRADEABLE>
+   <UPGRADEABLE rdf:about="BONE_BREAKER">
+      <rdf:type rdf:resource="ONE_HANDED"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="ARMSMAN"/>
+   </UPGRADEABLE>
+   <UPGRADEABLE rdf:about="BLADESMAN">
+      <rdf:type rdf:resource="ONE_HANDED"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="ARMSMAN"/>
+   </UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="DUAL_SAVAGERY">
+      <rdf:type rdf:resource="ONE_HANDED"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="DUAL_FLURRY"/>
+   </NOT_UPGRADEABLE>
+   <UPGRADEABLE rdf:about="DUAL_FLURRY">
+      <rdf:type rdf:resource="ONE_HANDED"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="ARMSMAN"/>
+   </UPGRADEABLE>
+   <UPGRADEABLE rdf:about="LIMBSPLITTER">
+      <rdf:type rdf:resource="TWO_HANDED"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="BARBARIAN"/>
+   </UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="WARMASTER">
+      <rdf:type rdf:resource="TWO_HANDED"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="SWEEP"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="SWEEP">
+      <rdf:type rdf:resource="TWO_HANDED"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="GREAT_CRITICAL_CHARGE"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="GREAT_CRITICAL_CHARGE">
+      <rdf:type rdf:resource="TWO_HANDED"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="CHAMPIONS_STANCE"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="CHAMPIONS_STANCE">
+      <rdf:type rdf:resource="TWO_HANDED"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="BARBARIAN"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="DEVASTATING_BLOW">
+      <rdf:type rdf:resource="TWO_HANDED"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="CHAMPIONS_STANCE"/>
+   </NOT_UPGRADEABLE>
+   <UPGRADEABLE rdf:about="DEEP_WOUNDS">
+      <rdf:type rdf:resource="TWO_HANDED"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="BARBARIAN"/>
+   </UPGRADEABLE>
+   <UPGRADEABLE rdf:about="SKULLCRUSHER">
+      <rdf:type rdf:resource="TWO_HANDED"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="BARBARIAN"/>
+   </UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="BLOCK_RUNNER">
+      <rdf:type rdf:resource="BLOCK"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="ELEMENTAL_PROTECTION"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="ELEMENTAL_PROTECTION">
+      <rdf:type rdf:resource="BLOCK"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="DEFLECT_ARROWS"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="DEFLECT_ARROWS">
+      <rdf:type rdf:resource="BLOCK"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="SHIELD_WALL"/>
+   </NOT_UPGRADEABLE>
+   <UPGRADEABLE rdf:about="SHIELD_WALL">
+      <rdf:type rdf:resource="BLOCK"/>
+      <rdf:type rdf:resource="SKILL"/>
+   </UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="QUICK_REFLEXES">
+      <rdf:type rdf:resource="BLOCK"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="SHIELD_WALL"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="SHIELD_CHARGE">
+      <rdf:type rdf:resource="BLOCK"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="DISARMING_BASH"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="DISARMING_BASH">
+      <rdf:type rdf:resource="BLOCK"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="DEADLY_BASH"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="DEADLY_BASH">
+      <rdf:type rdf:resource="BLOCK"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="POWER_BASH"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="POWER_BASH">
+      <rdf:type rdf:resource="BLOCK"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="SHIELD_WALL"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="CONDITIONING">
+      <rdf:type rdf:resource="HEAVY_ARMOR"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="CUSHIONED"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="CUSHIONED">
+      <rdf:type rdf:resource="HEAVY_ARMOR"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="FISTS_OF_STEEL"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="FISTS_OF_STEEL">
+      <rdf:type rdf:resource="HEAVY_ARMOR"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="JUGGERNAUT"/>
+   </NOT_UPGRADEABLE>
+   <UPGRADEABLE rdf:about="JUGGERNAUT">
+      <rdf:type rdf:resource="HEAVY_ARMOR"/>
+      <rdf:type rdf:resource="SKILL"/>
+   </UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="REFLECT_BLOWS">
+      <rdf:type rdf:resource="HEAVY_ARMOR"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="MATCHING_SET"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="MATCHING_SET">
+      <rdf:type rdf:resource="HEAVY_ARMOR"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="TOWER_OF_STRENGTH"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="TOWER_OF_STRENGTH">
+      <rdf:type rdf:resource="HEAVY_ARMOR"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="WELL_FITTED"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="WELL_FITTED">
+      <rdf:type rdf:resource="HEAVY_ARMOR"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="JUGGERNAUT"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="GLASS_SMITHING">
+      <rdf:type rdf:resource="SMITHING"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="ADVANCED_ARMORS"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="ADVANCED_ARMORS">
+      <rdf:type rdf:resource="SMITHING"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="ELVEN_SMITHING"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="ELVEN_SMITHING">
+      <rdf:type rdf:resource="SMITHING"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="STEEL_SMITHING"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="STEEL_SMITHING">
+      <rdf:type rdf:resource="SMITHING"/>
+      <rdf:type rdf:resource="SKILL"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="DRAGON_ARMOR">
+      <rdf:type rdf:resource="SMITHING"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="DAEDRIC_SMITHING"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="DAEDRIC_SMITHING">
+      <rdf:type rdf:resource="SMITHING"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="EBONY_SMITHING"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="EBONY_SMITHING">
+      <rdf:type rdf:resource="SMITHING"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="ORCISH_SMITHING"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="ORCISH_SMITHING">
+      <rdf:type rdf:resource="SMITHING"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="DWARVEN_SMITHING"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="DWARVEN_SMITHING">
+      <rdf:type rdf:resource="SMITHING"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="STEEL_SMITHING"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="ARCANE_BLACKSMITH">
+      <rdf:type rdf:resource="SMITHING"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="STEEL_SMITHING"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="STORM_ENCHANTER">
+      <rdf:type rdf:resource="ENCHANTING"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="FROST_ENCHANTER"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="FROST_ENCHANTER">
+      <rdf:type rdf:resource="ENCHANTING"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="FIRE_ENCHANTER"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="FIRE_ENCHANTER">
+      <rdf:type rdf:resource="ENCHANTING"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="ENCHANTER"/>
+   </NOT_UPGRADEABLE>
+   <UPGRADEABLE rdf:about="ENCHANTER">
+      <rdf:type rdf:resource="ENCHANTING"/>
+      <rdf:type rdf:resource="SKILL"/>
+   </UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="EXTRA_EFFECT">
+      <rdf:type rdf:resource="ENCHANTING"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="CORPUS_ENCHANTER"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="CORPUS_ENCHANTER">
+      <rdf:type rdf:resource="ENCHANTING"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="INSIGHTFUL_ENCHANTER"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="INSIGHTFUL_ENCHANTER">
+      <rdf:type rdf:resource="ENCHANTING"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="ENCHANTER"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="SOUL_SIPHON">
+      <rdf:type rdf:resource="ENCHANTING"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="SOUL_SQUEEZER"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="SOUL_SQUEEZER">
+      <rdf:type rdf:resource="ENCHANTING"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="ENCHANTER"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="ALTERATION_DUAL_CASTING">
+      <rdf:type rdf:resource="ALTERATION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="NOVICE_ALTERATION"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="NOVICE_ALTERATION">
+      <rdf:type rdf:resource="ALTERATION"/>
+      <rdf:type rdf:resource="SKILL"/>
+   </NOT_UPGRADEABLE>
+   <UPGRADEABLE rdf:about="MAGE_ARMOR">
+      <rdf:type rdf:resource="ALTERATION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="APPRENTICE_ALTERATION"/>
+   </UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="APPRENTICE_ALTERATION">
+      <rdf:type rdf:resource="ALTERATION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="NOVICE_ALTERATION"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="STABILITY">
+      <rdf:type rdf:resource="ALTERATION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="ADEPT_ALTERATION"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="ADEPT_ALTERATION">
+      <rdf:type rdf:resource="ALTERATION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="APPRENTICE_ALTERATION"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="ATRONACH">
+      <rdf:type rdf:resource="ALTERATION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="EXPERT_ALTERATION"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="EXPERT_ALTERATION">
+      <rdf:type rdf:resource="ALTERATION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="ADEPT_ALTERATION"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="MASTER_ALTERATION">
+      <rdf:type rdf:resource="ALTERATION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="EXPERT_ALTERATION"/>
+   </NOT_UPGRADEABLE>
+   <UPGRADEABLE rdf:about="MAGIC_RESITANCE">
+      <rdf:type rdf:resource="ALTERATION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="APPRENTICE_ALTERATION"/>
+   </UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="RESPITE">
+      <rdf:type rdf:resource="RESTORATION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="NOVICE_RESTORATION"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="NOVICE_RESTORATION">
+      <rdf:type rdf:resource="RESTORATION"/>
+      <rdf:type rdf:resource="SKILL"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="NECROMAGE">
+      <rdf:type rdf:resource="RESTORATION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="REGENERATION"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="REGENERATION">
+      <rdf:type rdf:resource="RESTORATION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="NOVICE_RESTORATION"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="WARD_ABSORB">
+      <rdf:type rdf:resource="RESTORATION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="NOVICE_RESTORATION"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="MASTER_RESTORATION">
+      <rdf:type rdf:resource="RESTORATION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="EXPERT_RESTORATION"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="EXPERT_RESTORATION">
+      <rdf:type rdf:resource="RESTORATION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="ADEPT_RESTORATION"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="ADEPT_RESTORATION">
+      <rdf:type rdf:resource="RESTORATION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="APPRENTICE_RESTORATION"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="APPRENTICE_RESTORATION">
+      <rdf:type rdf:resource="RESTORATION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="NOVICE_RESTORATION"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="AVOID_DEATH">
+      <rdf:type rdf:resource="RESTORATION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="RECOVERY"/>
+   </NOT_UPGRADEABLE>
+   <UPGRADEABLE rdf:about="RECOVERY">
+      <rdf:type rdf:resource="RESTORATION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="NOVICE_RESTORATION"/>
+   </UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="RESTORATION_DUAL_CASTING">
+      <rdf:type rdf:resource="RESTORATION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="NOVICE_RESTORATION"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="INTENSE_FLAMES">
+      <rdf:type rdf:resource="DESTRUCTION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="AUGMENTED_FLAMES"/>
+   </NOT_UPGRADEABLE>
+   <UPGRADEABLE rdf:about="AUGMENTED_FLAMES">
+      <rdf:type rdf:resource="DESTRUCTION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="NOVICE_DESTRUCTION"/>
+   </UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="NOVICE_DESTRUCTION">
+      <rdf:type rdf:resource="DESTRUCTION"/>
+      <rdf:type rdf:resource="SKILL"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="DEEP_FREEZE">
+      <rdf:type rdf:resource="DESTRUCTION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="AUGMENTED_FROST"/>
+   </NOT_UPGRADEABLE>
+   <UPGRADEABLE rdf:about="AUGMENTED_FROST">
+      <rdf:type rdf:resource="DESTRUCTION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="NOVICE_DESTRUCTION"/>
+   </UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="DISINTEGRATE">
+      <rdf:type rdf:resource="DESTRUCTION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="AUGMENTED_SHOCK"/>
+   </NOT_UPGRADEABLE>
+   <UPGRADEABLE rdf:about="AUGMENTED_SHOCK">
+      <rdf:type rdf:resource="DESTRUCTION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="NOVICE_DESTRUCTION"/>
+   </UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="MASTER_DESTRUCTION">
+      <rdf:type rdf:resource="DESTRUCTION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="EXPERT_DESTRUCTION"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="EXPERT_DESTRUCTION">
+      <rdf:type rdf:resource="DESTRUCTION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="ADEPT_DESTRUCTION"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="ADEPT_DESTRUCTION">
+      <rdf:type rdf:resource="DESTRUCTION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="APPRENTINCE_DESTRUCTION"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="APPRENTINCE_DESTRUCTION">
+      <rdf:type rdf:resource="DESTRUCTION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="NOVICE_DESTRUCTION"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="RUNE_MASTER">
+      <rdf:type rdf:resource="DESTRUCTION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="APPRENTINCE_DESTRUCTION"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="IMPACT">
+      <rdf:type rdf:resource="DESTRUCTION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="DESTRUCTION_DUAL_CASTING"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="DESTRUCTION_DUAL_CASTING">
+      <rdf:type rdf:resource="DESTRUCTION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="NOVICE_DESTRUCTION"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="ELEMENTAL_POTENCY">
+      <rdf:type rdf:resource="CONJURATION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="ALTROMANCY"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="ALTROMANCY">
+      <rdf:type rdf:resource="CONJURATION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="SUMMONER"/>
+   </NOT_UPGRADEABLE>
+   <UPGRADEABLE rdf:about="SUMMONER">
+      <rdf:type rdf:resource="CONJURATION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="NOVICE_CONJURATION"/>
+   </UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="NOVICE_CONJURATION">
+      <rdf:type rdf:resource="CONJURATION"/>
+      <rdf:type rdf:resource="SKILL"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="TWIN_SOULS">
+      <rdf:type rdf:resource="CONJURATION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="DARK_SOULS"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="DARK_SOULS">
+      <rdf:type rdf:resource="CONJURATION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="NECROMANCY"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="NECROMANCY">
+      <rdf:type rdf:resource="CONJURATION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="NOVICE_CONJURATION"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="CONJURATION_DUAL_CASTING">
+      <rdf:type rdf:resource="CONJURATION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="NOVICE_CONJURATION"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="OBLIVION_BINDING">
+      <rdf:type rdf:resource="CONJURATION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="SOUL_STEALER"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="SOUL_STEALER">
+      <rdf:type rdf:resource="CONJURATION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="MYSTIC_BINDING"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="MYSTIC_BINDING">
+      <rdf:type rdf:resource="CONJURATION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="NOVICE_CONJURATION"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="MASTER_CONJURATION">
+      <rdf:type rdf:resource="CONJURATION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="EXPERT_CONJURATION"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="EXPERT_CONJURATION">
+      <rdf:type rdf:resource="CONJURATION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="ADEPT_CONJURATION"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="ADEPT_CONJURATION">
+      <rdf:type rdf:resource="CONJURATION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="APPRENTICE_CONJURATION"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="APPRENTICE_CONJURATION">
+      <rdf:type rdf:resource="CONJURATION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="NOVICE_CONJURATION"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="MASTER_OF_THE_MIND">
+      <rdf:type rdf:resource="ILLUSION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="RAGE"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="RAGE">
+      <rdf:type rdf:resource="ILLUSION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="ASPECT_OF_TERROR"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="QUIET_CASTING">
+      <rdf:type rdf:resource="ILLUSION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="KINDRED_MAGE"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="KINDRED_MAGE">
+      <rdf:type rdf:resource="ILLUSION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="ANIMAGE"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="ANIMAGE">
+      <rdf:type rdf:resource="ILLUSION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="NOVICE_ILLUSION"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="NOVICE_ILLUSION">
+      <rdf:type rdf:resource="ILLUSION"/>
+      <rdf:type rdf:resource="SKILL"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="ASPECT_OF_TERROR">
+      <rdf:type rdf:resource="ILLUSION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="HYPNOTIC_GAZE"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="HYPNOTIC_GAZE">
+      <rdf:type rdf:resource="ILLUSION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="NOVICE_ILLUSION"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="MASTER_ILLUSION">
+      <rdf:type rdf:resource="ILLUSION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="EXPERT_ILLUSION"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="EXPERT_ILLUSION">
+      <rdf:type rdf:resource="ILLUSION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="ADEPT_ILLUSION"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="ADEPT_ILLUSION">
+      <rdf:type rdf:resource="ILLUSION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="APPRENTICE_ILLUSION"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="APPRENTICE_ILLUSION">
+      <rdf:type rdf:resource="ILLUSION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="NOVICE_ILLUSION"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="ILLUSION_DUAL_CASTING">
+      <rdf:type rdf:resource="ILLUSION"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="NOVICE_ILLUSION"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="PURIFY">
+      <rdf:type rdf:resource="ALCHEMY"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="SNAKEBLOOD"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="SNAKEBLOOD">
+      <rdf:type rdf:resource="ALCHEMY"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="CONCENTRATED_POISON"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="CONCENTRATED_POISON">
+      <rdf:type rdf:resource="ALCHEMY"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="POISONER"/>
+   </NOT_UPGRADEABLE>
+   <UPGRADEABLE rdf:about="EXPERIMENTER">
+      <rdf:type rdf:resource="ALCHEMY"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="BENEFACTOR"/>
+   </UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="BENEFACTOR">
+      <rdf:type rdf:resource="ALCHEMY"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="PHYSICIAN"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="PHYSICIAN">
+      <rdf:type rdf:resource="ALCHEMY"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="ALCHEMIST"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="GREEN_THUMB">
+      <rdf:type rdf:resource="ALCHEMY"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="CONCENTRATED_POISON"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="POISONER">
+      <rdf:type rdf:resource="ALCHEMY"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="PHYSICIAN"/>
+   </NOT_UPGRADEABLE>
+   <UPGRADEABLE rdf:about="ALCHEMIST">
+      <rdf:type rdf:resource="ALCHEMY"/>
+      <rdf:type rdf:resource="SKILL"/>
+   </UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="INTIMIDATION">
+      <rdf:type rdf:resource="SPEECH"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="PERSUASION"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="PERSUASION">
+      <rdf:type rdf:resource="SPEECH"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="BRIBERY"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="BRIBERY">
+      <rdf:type rdf:resource="SPEECH"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="HAGGLING"/>
+   </NOT_UPGRADEABLE>
+   <UPGRADEABLE rdf:about="HAGGLING">
+      <rdf:type rdf:resource="SPEECH"/>
+      <rdf:type rdf:resource="SKILL"/>
+   </UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="MASTER_TRADER">
+      <rdf:type rdf:resource="SPEECH"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="FENCE"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="FENCE">
+      <rdf:type rdf:resource="SPEECH"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="INVESTOR"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="INVESTOR">
+      <rdf:type rdf:resource="SPEECH"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="MERCHANT"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="MERCHANT">
+      <rdf:type rdf:resource="SPEECH"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="ALLURE"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="ALLURE">
+      <rdf:type rdf:resource="SPEECH"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="HAGGLING"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="PERFECT_TOUCH">
+      <rdf:type rdf:resource="PICKPOCKET"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="MISDIRECTION"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="MISDIRECTION">
+      <rdf:type rdf:resource="PICKPOCKET"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="CUTPURSE"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="CUTPURSE">
+      <rdf:type rdf:resource="PICKPOCKET"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="NIGHT_THIEF"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="KEYMASTER">
+      <rdf:type rdf:resource="PICKPOCKET"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="CUTPURSE"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="NIGHT_THIEF">
+      <rdf:type rdf:resource="PICKPOCKET"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="LIGHT_FINGERS"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="EXTRA_POCKETS">
+      <rdf:type rdf:resource="PICKPOCKET"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="NIGHT_THIEF"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="POISONED">
+      <rdf:type rdf:resource="PICKPOCKET"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="NIGHT_THIEF"/>
+   </NOT_UPGRADEABLE>
+   <UPGRADEABLE rdf:about="LIGHT_FINGERS">
+      <rdf:type rdf:resource="PICKPOCKET"/>
+      <rdf:type rdf:resource="SKILL"/>
+   </UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="MASTER_LOCKS">
+      <rdf:type rdf:resource="LOCKPICKING"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="EXPERT_LOCKS"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="EXPERT_LOCKS">
+      <rdf:type rdf:resource="LOCKPICKING"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="ADEPT_LOCKS"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="UNBREAKABLE">
+      <rdf:type rdf:resource="LOCKPICKING"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="LOCKSMITH"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="LOCKSMITH">
+      <rdf:type rdf:resource="LOCKPICKING"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="EXPERT_LOCKS"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="ADEPT_LOCKS">
+      <rdf:type rdf:resource="LOCKPICKING"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="APPRENTICE_LOCKS"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="TREASURE_HUNTER">
+      <rdf:type rdf:resource="LOCKPICKING"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="GOLDEN_TOUCH"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="GOLDEN_TOUCH">
+      <rdf:type rdf:resource="LOCKPICKING"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="ADEPT_LOCKS"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="APPRENTICE_LOCKS">
+      <rdf:type rdf:resource="LOCKPICKING"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="NOVICE_LOCKS"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="WAX_KEY">
+      <rdf:type rdf:resource="LOCKPICKING"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="QUICK_HANDS"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="QUICK_HANDS">
+      <rdf:type rdf:resource="LOCKPICKING"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="APPRENTICE_LOCKS"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="NOVICE_LOCKS">
+      <rdf:type rdf:resource="LOCKPICKING"/>
+      <rdf:type rdf:resource="SKILL"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="SHADOW_WARRIOR">
+      <rdf:type rdf:resource="SNEAK"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="SILENCE"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="SILENCE">
+      <rdf:type rdf:resource="SNEAK"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="SILENT_ROLL"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="SILENT_ROLL">
+      <rdf:type rdf:resource="SNEAK"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="LIGHT_FOOT"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="LIGHT_FOOT">
+      <rdf:type rdf:resource="SNEAK"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="MUFFLED_MOVEMENT"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="MUFFLED_MOVEMENT">
+      <rdf:type rdf:resource="SNEAK"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="STEALTH"/>
+   </NOT_UPGRADEABLE>
+   <UPGRADEABLE rdf:about="STEALTH">
+      <rdf:type rdf:resource="SNEAK"/>
+      <rdf:type rdf:resource="SKILL"/>
+   </UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="ASSASSINS_BLADE">
+      <rdf:type rdf:resource="SNEAK"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="DEADLY_AIM"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="DEADLY_AIM">
+      <rdf:type rdf:resource="SNEAK"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="BACKSTAB"/>
+   </NOT_UPGRADEABLE>
+   <NOT_UPGRADEABLE rdf:about="BACKSTAB">
+      <rdf:type rdf:resource="SNEAK"/>
+      <rdf:type rdf:resource="SKILL"/>
+      <HASSKILLREQUIREMENT rdf:resource="STEALTH"/>
+   </NOT_UPGRADEABLE>
+   <BUILD rdf:about="ASSASIN">
+   </BUILD>
+   <RACE rdf:about="REDGUARD">
+   </RACE>
+   <RACE rdf:about="ORSIMER">
+   </RACE>
+   <RACE rdf:about="NORD">
+   </RACE>
+   <RACE rdf:about="KHAJIIT">
+   </RACE>
+   <RACE rdf:about="IMPERIAL">
+   </RACE>
+   <RACE rdf:about="DUNMER">
+   </RACE>
+   <RACE rdf:about="BRETON">
+   </RACE>
+   <RACE rdf:about="BOSMER">
+   </RACE>
+   <RACE rdf:about="ARGONIAN">
+   </RACE>
+   <RACE rdf:about="ALTMER">
+   </RACE>
+</rdf:RDF>
